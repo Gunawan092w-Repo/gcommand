@@ -1,3 +1,8 @@
+Gunawan092w GCommand
+Basically, a simple maded Command Prompt out of batch files!
+Preview: ![preview1-1115x628](https://user-images.githubusercontent.com/86261006/207881174-486a7d7c-22bd-4e18-9cde-5cf941a82b53.png)
+
+
 How to build GCommand.exe
 
 1. Download GCommand Repository
@@ -10,6 +15,6 @@ How to build GCommand.exe
 8. Congratulations! GCommand_V.x.x.x.exe is Builded!
 
 If you're experiencing error with a message saying "Error opening the MakeCAB Directive File.", You will need to run iexpress as administrator like in step 4.
-![image](https://user-images.githubusercontent.com/86261006/207878583-8277d017-c9ca-4c9b-88f8-70da0447141f.png)
+![iexpress-error-328x195](https://user-images.githubusercontent.com/86261006/207878583-8277d017-c9ca-4c9b-88f8-70da0447141f.png)
 
 
