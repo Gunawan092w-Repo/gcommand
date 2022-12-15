@@ -28,8 +28,9 @@ jobs:
       # Runs a single command using the runners shell
       - name: Build using IEXPRESS.EXE
         run: start-process -filepath "\Windows\System32\iexpress.exe" -argumentlist "/n /q D:\a\gcommand\gcommand\gcommand_v.1.0.0-for-githubaction-only.SED" -verb runas
+      
       - name: Checks if Build Success or Failed
         run: |
-        start-process -filepath "\Windows\System32\conhost.exe" -argumentlist "/c if exist D:\a\gcommand\gcommand\GCommand_V.1.0.0.exe echo BUILD SUCCESS && exit 0"
-        start-process -filepath "\Windows\System32\conhost.exe" -argumentlist "/c if not exist D:\a\gcommand\gcommand\GCommand_V.1.0.0.exe echo BUILD SUCCESS && exit 1"
+         start-process -filepath "\Windows\System32\conhost.exe" -argumentlist "/c if exist D:\a\gcommand\gcommand\GCommand_V.1.0.0.exe echo BUILD SUCCESS && exit 0"
+         start-process -filepath "\Windows\System32\conhost.exe" -argumentlist "/c if not exist D:\a\gcommand\gcommand\GCommand_V.1.0.0.exe echo BUILD SUCCESS && exit 1"
 
