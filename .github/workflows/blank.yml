@@ -34,3 +34,35 @@ jobs:
          start-process -filepath "C:\Windows\System32\cmd.exe" -argumentlist "/c if exist D:\a\gcommand\gcommand\GCommand_V.1.0.0.exe echo BUILD SUCCESS && exit 1"
          start-process -filepath "C:\Windows\System32\cmd.exe" -argumentlist "/c if not exist D:\a\gcommand\gcommand\GCommand_V.1.0.0.exe echo BUILD Failed && exit 1"
 
+    name: Create Release
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Create release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
+        with:
+          tag_name: v0.1.0
+          release_name: TEST-RELEASE
+          body: |
+            THIS IS JUST A TEST!
+          draft: true
+          prerelease: false
+      - name: Upload release asset
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: D:\a\gcommand\gcommand\
+          asset_name: GCommand_V.1.0.0.exe
+          asset_content_type: application/x-msdownload
+      - name: Publish release
+        uses: StuYarrow/publish-release@v1.1.2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          id: ${{ steps.create_release.outputs.id }}
+
