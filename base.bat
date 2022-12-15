@@ -1,5 +1,6 @@
 @echo off
-title %cd%\gcommand.exe
+title %cd%\GCommand_V.1.0.0.exe
+cd C:\
 echo Gunawan092w GCommand [Version 1.0.0]
 echo See LICENSE https://github.com/gunawan092w_repo/LICENSE
 :start
