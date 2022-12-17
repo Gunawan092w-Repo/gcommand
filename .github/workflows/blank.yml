@@ -32,8 +32,6 @@ jobs:
          dir
          
       # Publish Package - https://github.com/marketplace/actions/publish-a-release
-      - name: Checkout code
-        uses: actions/checkout@v2
       - name: Create release
         id: create_release
         uses: actions/create-release@v1
