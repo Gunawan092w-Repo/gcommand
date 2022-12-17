@@ -1,4 +1,5 @@
 Gunawan092w GCommand
+[![CI-GCOMMAND-BUILDRELEASE](https://github.com/Gunawan092w-Repo/gcommand/actions/workflows/blank.yml/badge.svg)](https://github.com/Gunawan092w-Repo/gcommand/actions/workflows/blank.yml)
 Basically, a simple maded Command Prompt out of batch files!
 Preview: ![preview1-1115x628](https://user-images.githubusercontent.com/86261006/207881174-486a7d7c-22bd-4e18-9cde-5cf941a82b53.png)
 
