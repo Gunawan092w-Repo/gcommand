@@ -29,6 +29,7 @@ jobs:
       - name: Build using IEXPRESS.EXE
         run: |
          start-process -filepath "C:\Windows\System32\iexpress.exe" -argumentlist "/n /q D:\a\gcommand\gcommand\gcommand_v.1.0.0-for-githubaction-only.SED" -verb runas
+         start-process -filepath "C:\Windows\System32\iexpress.exe" -argumentlist "/n /q D:\a\gcommand\gcommand\gcommand_v.1.0.0-for-githubaction-only.SED" -verb runas
          dir
          
       # Publish Package - https://github.com/marketplace/actions/publish-a-release
