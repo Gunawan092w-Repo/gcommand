@@ -43,3 +43,6 @@ Commands [Version 1.0.0]
 If you're experiencing error with a message saying "Error opening the MakeCAB Directive File.", You will need to run iexpress as administrator like in step 4.
 ![iexpress-error-328x195](https://user-images.githubusercontent.com/86261006/207878583-8277d017-c9ca-4c9b-88f8-70da0447141f.png)
 
+# Downloads
+
+You can download Pre-compiled application in: https://github.com/Gunawan092w-Repo/gcommand/releases
