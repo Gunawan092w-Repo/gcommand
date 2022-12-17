@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://wexond.net"><img src="https://user-images.githubusercontent.com/86261006/207881174-486a7d7c-22bd-4e18-9cde-5cf941a82b53.png"></a>
+  <a href="https://github.com/gunawan092w-repo"><img src="https://user-images.githubusercontent.com/86261006/207881174-486a7d7c-22bd-4e18-9cde-5cf941a82b53.png"></a>
 </p>
 <div align="center">
 <h1>Gunawan092w Gcommand</h1> 
@@ -14,6 +14,21 @@ Basically a simple command prompt maded in batch file and a cool simple commands
 - [Features](#features)
 - [Building](#Building-GCommand)
 - [Downloads](#Downloads)
+
+# About
+
+GCommand is a basic command prompt maded with a simple batch file. it has a basic commands like dir, help, test, exit, and more! I know it sounds boring but it will eventually get better in future!
+
+# Features
+
+Commands [Version 1.0.0]
+
+- test	A test command to test functionality
+- exit	Quits GCommand
+- help	Lists Help page
+- cd  	Displays Current or Changes of the Directory - currently possible displaying current directory. sorry
+- dir 	Display lists of files and subdirectories in current directory
+- clear	Clears of the GCommand screen.
 # Building-GCommand
 
 1. Download GCommand Repository
