@@ -39,10 +39,15 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
         with:
-          tag_name: v0.1.0
-          release_name: TEST-RELEASE
+          tag_name: v1.1
+          release_name: GCommand V1.1
           body: |
-            THIS IS JUST A TEST!
+            Changelogs:
+            - Added new command -- 1. color         Sets console's background or text color 
+                                   2. restart       Restarts GCommand
+                                   3. change-drive  Changes drive letter location
+            - Improved 'cd' command.                   
+           
           draft: true
           prerelease: false
       - name: Upload release asset
@@ -51,8 +56,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: "D:\\a\\gcommand\\gcommand\\GCommand_V.1.0.0.exe"
-          asset_name: GCommand_V.1.0.0.exe
+          asset_path: "D:\\a\\gcommand\\gcommand\\GCommand_V.1.1.exe"
+          asset_name: GCommand_V.1.1.exe
           asset_content_type: application/x-msdownload
       - name: Publish release
         uses: StuYarrow/publish-release@v1.1.2
